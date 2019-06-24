@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'com.mattbertolini'
+version '1.0.0-SNAPSHOT'
+
+sourceCompatibility = ext.javaVersion
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'io.dropwizard:dropwizard-core'
+    implementation 'org.springframework:spring-context'
+}

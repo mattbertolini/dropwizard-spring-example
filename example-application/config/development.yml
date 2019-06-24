@@ -1,0 +1,10 @@
+logging:
+  level: WARN
+  loggers:
+    com.mattbertolini: DEBUG
+    io.dropwizard: INFO
+    org.eclipse.jetty: INFO
+
+spring:
+  contextConfigClasses:
+    - com.mattbertolini.dropwizard.example.SpringContext

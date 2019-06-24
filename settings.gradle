@@ -1,0 +1,4 @@
+rootProject.name = 'dropwizard-spring-example'
+include 'dropwizard-spring-bundle'
+include 'example-application'
+

@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'com.mattbertolini'
+version '1.0.0-SNAPSHOT'
+
+sourceCompatibility = ext.javaVersion
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':dropwizard-spring-bundle')
+    implementation 'io.dropwizard:dropwizard-core'
+    implementation 'org.springframework:spring-context'
+
+    implementation 'javax.xml.bind:jaxb-api:2.3.0'
+    implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.0.1'
+    implementation 'javax.activation:javax.activation-api:1.2.0'
+}
