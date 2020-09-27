@@ -7,11 +7,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import javax.validation.constraints.NotEmpty;
 import java.util.Set;
 
 public class XmlSpringConfiguration extends SpringConfiguration {
     private static final Logger LOGGER = LoggerFactory.getLogger(XmlSpringConfiguration.class);
-    
+
+    @NotEmpty
     private Set<String> contextConfigLocations;
 
     @JsonProperty("contextConfigLocations")

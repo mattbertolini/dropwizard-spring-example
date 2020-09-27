@@ -20,7 +20,7 @@ public class SpringContext {
         return new ThreadDeadlockHealthCheck();
     }
 
-    // Unfortunately IntelliJ doesn't know about bean post processors so it things ExampleConfiguration isn't in the context.
+    // Unfortunately IntelliJ doesn't know about bean post processors so it thinks ExampleConfiguration isn't in the context.
     @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Bean
     public ExampleResource exampleResource(ExampleConfiguration exampleConfiguration) {
